@@ -131,7 +131,7 @@ By default, Kibana reads this url from an external metadata service, but users c
 `ops.interval:`:: *Default: 5000* Set the interval in milliseconds to sample system and process performance metrics.
 The minimum value is 100.
 
-`server.rewriteBasePath:`:: *Default: false* Specifies whether Kibana should rewrite requests that are prefixed with `server.basePath` or require that they are rewritten by your reverse proxy. This setting was effectively always `false` before Kibana 6.3 and will default to `true` starting in Kibana 7.0.
+`server.rewriteBasePath:`:: *In Kibana 6.3 and earlier, default: false. In Kibana 7.0 and later, default: true* Specifies whether Kibana should rewrite requests that are prefixed with `server.basePath` or require that they are rewritten by your reverse proxy.
 
 `server.customResponseHeaders:`:: *Default: `{}`* Header names and values to send on all responses to the client from the Kibana server.
 
